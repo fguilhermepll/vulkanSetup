@@ -1,3 +1,0 @@
-Install msys64
-	-run pacman -Syuu
-	-then pacman pacman -S mingw-w64-x86_64-toolchain
