@@ -1,0 +1,8 @@
+Install msys64
+	-run pacman -Syuu
+	-then pacman -S mingw-w64-x86_64-toolchain
+	-then pacman -S mingw-w64-x86_64-glfw
+	-then pacman -S mingw-w64-x86_64-vulkan
+
+Compile and link:
+	g++ -std=c++17 -I C:/VulkanSDK/1.2.189.2/Include/ -I C:/Users/usr1/Documents/Libraries/ -o a.exe main.cpp -L/C:/VulkanSDK/1.2.189.2/Lib  -lglfw3 -lgdi32 -lvulkan
